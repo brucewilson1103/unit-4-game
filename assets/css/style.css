@@ -4,13 +4,20 @@ body {
 
 h1{
   background-color: bisque;
-  height: 70px;
-  width: 20%;
-  padding: 50px;
+  padding: 5px;
   margin: 0 auto;
 }
 
 .instructions{
   width: 50%;
   color: white;
+}
+
+.score{
+  background-color: aqua;
+
+}
+
+.targetnumber{
+  background-color: blueviolet;
 }
