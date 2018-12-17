@@ -1,0 +1,16 @@
+body {
+  background-color: brown;
+}
+
+h1{
+  background-color: bisque;
+  height: 70px;
+  width: 20%;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.instructions{
+  width: 50%;
+  color: white;
+}
