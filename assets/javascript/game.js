@@ -2,10 +2,12 @@ var wins = 0;
 var losses = 0;
 var totalnumber = 0;
 var cpunum = Math.floor(Math.random() * (120 - 19 + 1) + 19);
+var currenttotal = 0
 console.log(cpunum);
 $(".targetnumber").html(cpunum);
 $("#wins").html("wins:" + wins);
 $("#losses").html("losses: " + losses);
+$(".totalnumber").html(0);
 
 $(".crystal").each(function () {
   // console.log($(this))
@@ -31,6 +33,9 @@ $(".crystal").each(function () {
 
   });
 
+
+  
+
   $(document).ready(function () {
     $('#brownBtn').on('click', addtobox);
     
@@ -46,3 +51,20 @@ $(".crystal").each(function () {
     // var totalnumber = totalnumber++$(this).attr.parsInt(randomnumber)}
 
   });
+
+ 
+
+
+  // I need to define the function new game.
+  
+  if (cpunum === currenttotal) {
+
+    wins ++;
+    newgame ()
+  }
+
+  if (cpunum < currenttotal) {
+
+    losses ++;
+    newgame ()
+  }
