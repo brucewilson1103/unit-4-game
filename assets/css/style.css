@@ -9,8 +9,9 @@ h1{
 }
 
 .instructions{
-  width: 50%;
+  width: 100%;
   color: white;
+  margin-bottom: 10px;
 }
 
 .score{
@@ -21,3 +22,14 @@ h1{
 .targetnumber{
   background-color: blueviolet;
 }
+
+.crystal img{
+  width:100px;
+  height: 100px;
+}
+
+.crystal {
+  display: inline-block;
+  width: auto;
+}
+
