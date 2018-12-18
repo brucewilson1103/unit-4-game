@@ -5,7 +5,7 @@ var cpunum = Math.floor(Math.random() * (120 - 19 + 1) + 19);
 var currenttotal = 0
 console.log(cpunum);
 $(".targetnumber").html(cpunum);
-$(".totalnumber").html(0);
+$(".totalnumber").html("");
 $("#losses").html("losses: " + losses);
 $("#wins").html("wins:" + wins);
 
@@ -49,8 +49,9 @@ $(document).ready(function() {
     if (cpunum === currenttotal) {
 
       wins ++;
-      newgame ();
       $("#wins").html("wins:" + wins);
+      newgame ();
+      alert("You have won!")
     }
   
     if (cpunum < currenttotal) {
@@ -58,6 +59,7 @@ $(document).ready(function() {
       losses ++;
       $("#losses").html("losses: " + losses);
       newgame ();
+      alert("You have lost!")
     }
   
   });
