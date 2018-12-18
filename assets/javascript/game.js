@@ -5,9 +5,9 @@ var cpunum = Math.floor(Math.random() * (120 - 19 + 1) + 19);
 var currenttotal = 0
 console.log(cpunum);
 $(".targetnumber").html(cpunum);
-$("#wins").html("wins:" + wins);
-$("#losses").html("losses: " + losses);
 $(".totalnumber").html(0);
+$("#losses").html("losses: " + losses);
+$("#wins").html("wins:" + wins);
 
 
 
@@ -23,8 +23,12 @@ function assignCrystalValue() {
 
 function newgame () {
   assignCrystalValue();
+  
+  $(".totalnumber").html(0);
+  $("#wins").html("wins:" + wins);
   currenttotal=0;
-
+  var cpunum = Math.floor(Math.random() * (120 - 19 + 1) + 19);
+  $(".targetnumber").html(cpunum);
  
 }
 
@@ -45,13 +49,15 @@ $(document).ready(function() {
     if (cpunum === currenttotal) {
 
       wins ++;
-      newgame ()
+      newgame ();
+      $("#wins").html("wins:" + wins);
     }
   
     if (cpunum < currenttotal) {
   
       losses ++;
-      newgame ()
+      $("#losses").html("losses: " + losses);
+      newgame ();
     }
   
   });
