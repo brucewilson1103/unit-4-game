@@ -53,7 +53,7 @@ $("#wins").html("wins:" + wins);
 
       wins ++;
       $("#wins").html("wins: " + wins);
-      alert("You have won!")
+      alert("You have won!");
       newgame();
       console.log(cpunum +"this is in win condition")
     };
@@ -62,6 +62,9 @@ $("#wins").html("wins:" + wins);
   
       losses ++;
       $("#losses").html("losses: " + losses);
+      var audioElement = document.createElement('audio');
+      audioElement.setAttribute('src', "assets/Cleo.m4a");
+      audioElement.play();
       alert("You have lost!");
       newgame();
       
