@@ -1,5 +1,5 @@
 body {
-  background-color: brown;
+  background-image: url(../images/background4.png);
 }
 
 h1{
@@ -7,22 +7,30 @@ h1{
 }
 
 .edge{
-  margin-left: 5px;
+  margin-left: 1px;
 }
 
 .instructions{
   width: 100%;
   color: white;
   margin-bottom: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .score{
-  background-color: blue;
+  background-color:#3E3DA0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
 
 }
 
 .targetnumber{
   background-color: blueviolet;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .crystal img{
@@ -34,4 +42,11 @@ h1{
   display: inline-block;
   width: auto;
 }
+
+.totalscore, .totalnumber{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font:bolder;
+}
+
 

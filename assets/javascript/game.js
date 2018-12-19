@@ -52,7 +52,7 @@ $("#wins").html("wins:" + wins);
     if (cpunum === currenttotal) {
 
       wins ++;
-      $("#wins").html("wins:" + wins);
+      $("#wins").html("wins: " + wins);
       alert("You have won!")
       newgame();
       console.log(cpunum +"this is in win condition")
